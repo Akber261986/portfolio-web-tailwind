@@ -1,6 +1,7 @@
 'use client';
 
-import React, { useState } from 'react';
+import { useState } from 'react';
+import Image from 'next/image';
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -51,7 +52,7 @@ const ContactUs = () => {
   };
   
   return (
-    <section id="contact" className="p-8 bg-gray-200">
+    <section id="contact" className="p-16 bg-gray-200 h-screen">
       <h2 className='text-4xl text-center font-bold'>Contact Me</h2>
       <form onSubmit={handleSubmit}
       className="flex flex-col w-3/4 sm:w-3/5 mx-auto ">
@@ -102,21 +103,33 @@ const ContactUs = () => {
       </form>
 
       {/* Social Links */}
-      <div className="flex justify-center mt-4 gap-16">
+      <div className="flex justify-center mt-16 gap-16">
         <a href="https://www.linkedin.com/in/ghulam-akber-8221052bb/" target="_blank" rel="noopener noreferrer"
-        className='text-blue-700 no-underline hover:underline'
         >
-          LinkedIn
+          <Image 
+          src={"/images/svg/linkedin-brands-solid.svg"}
+          alt='LinkedIn'
+          width={50}
+          height={1}
+          />
         </a>
         <a href="https://github.com/Akber261986" target="_blank" rel="noopener noreferrer"
-        className='text-blue-700 no-underline hover:underline'
         >
-        GitHub
+           <Image 
+          src={"/images/svg/github-brands-solid.svg"}
+          alt='GitHub'
+          width={50}
+          height={1}
+          />
         </a>
         <a href="https://web.facebook.com/ghulam.dal?mibextid=ZbWKwL&_rdc=1&_rdr" target="_blank" rel="noopener noreferrer"
-        className='text-blue-700 no-underline hover:underline'
         >
-        FaceBook
+          <Image 
+          src={"/images/svg/facebook-brands-solid.svg"}
+          alt='Facebook'
+          width={50}
+          height={1}
+          />
         </a>
       </div>
     </section>
