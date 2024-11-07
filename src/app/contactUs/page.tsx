@@ -52,8 +52,8 @@ const ContactUs = () => {
   };
   
   return (
-    <div className='h-screen'>
-      <section id="contact" className="p-16 bg-gray-200">
+    <div className='h-screen bg-gray-200'>
+      <div id="contact" className="p-16">
         <h2 className='text-4xl text-center font-bold'>Contact Me</h2>
         <form onSubmit={handleSubmit}
         className="flex flex-col w-3/4 sm:w-3/5 mx-auto ">
@@ -102,8 +102,6 @@ const ContactUs = () => {
             Send Message
           </button>
         </form>
-
-        {/* Social Links */}
         <div className="flex justify-center mt-16 gap-16">
           <a href="https://www.linkedin.com/in/ghulam-akber-8221052bb/" target="_blank" rel="noopener noreferrer"
           >
@@ -133,7 +131,7 @@ const ContactUs = () => {
             />
           </a>
         </div>
-      </section>
+      </div>
     </div>
   );
 };
