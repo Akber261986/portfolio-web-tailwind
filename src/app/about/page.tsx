@@ -14,10 +14,8 @@ const About = () => {
     { name: "React", targetWidth: 45, bg: "bg-red-500" },
   ];
 
-  // Create a state array to store the width for each skill
   const [widths, setWidths] = useState(skills.map(() => 0));
 
-  // Use useEffect to animate each skill bar width individually
   useEffect(() => {
     const intervals = skills.map((skill, index) => {
       return setInterval(() => {

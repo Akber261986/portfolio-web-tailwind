@@ -19,7 +19,9 @@ const Header = () => {
         <span className='text-white'>GHULAM </span> AKBER
       </div>
         <ul 
-        className={`md:flex flex-col md:flex-row  items-center pt-10 md:pt-0 gap-10 md:static md:w-auto md:h-auto absolute right-0 top-20 w-60 h-[25rem] text-white bg-gray-950 ${show ? "flex" : "hidden"}`}
+        className={`flex-col items-center pt-10 gap-10 absolute right-0 top-20 w-60 h-[25rem] text-white bg-gray-950
+          md:flex md:flex-row md:static md:h-auto md:w-auto md:pt-0
+          ${show ? "flex" : "hidden"}`}
 
         >
             <li><Link href="/" className='hover:text-cyan-400'>Home</Link></li>

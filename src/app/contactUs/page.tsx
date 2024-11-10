@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-
+import Link from 'next/link';
 const ContactUs = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -103,7 +103,7 @@ const ContactUs = () => {
           </button>
         </form>
         <div className="flex justify-center mt-16 gap-16">
-          <a href="https://www.linkedin.com/in/ghulam-akber-8221052bb/" target="_blank" rel="noopener noreferrer"
+          <Link href="https://www.linkedin.com/in/ghulam-akber-8221052bb/" target="_blank" rel="noopener noreferrer"
           >
             <Image 
             src={"/images/svg/linkedin-brands-solid.svg"}
@@ -111,8 +111,8 @@ const ContactUs = () => {
             width={50}
             height={1}
             />
-          </a>
-          <a href="https://github.com/Akber261986" target="_blank" rel="noopener noreferrer"
+          </Link>
+          <Link href="https://github.com/Akber261986" target="_blank" rel="noopener noreferrer"
           >
             <Image 
             src={"/images/svg/github-brands-solid.svg"}
@@ -120,8 +120,8 @@ const ContactUs = () => {
             width={50}
             height={1}
             />
-          </a>
-          <a href="https://web.facebook.com/ghulam.dal?mibextid=ZbWKwL&_rdc=1&_rdr" target="_blank" rel="noopener noreferrer"
+          </Link>
+          <Link href="https://web.facebook.com/ghulam.dal?mibextid=ZbWKwL&_rdc=1&_rdr" target="_blank" rel="noopener noreferrer"
           >
             <Image 
             src={"/images/svg/facebook-brands-solid.svg"}
@@ -129,7 +129,7 @@ const ContactUs = () => {
             width={50}
             height={1}
             />
-          </a>
+          </Link>
         </div>
       </div>
     </div>
