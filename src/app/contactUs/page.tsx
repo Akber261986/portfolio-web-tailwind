@@ -52,7 +52,7 @@ const ContactUs = () => {
   };
   
   return (
-    <div className='h-screen bg-gray-200'>
+    <div className='bg-gray-200'>
       <div id="contact" className="p-16">
         <h2 className='text-4xl text-center font-bold'>Contact Me</h2>
         <form onSubmit={handleSubmit}
